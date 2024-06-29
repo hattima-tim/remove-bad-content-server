@@ -7,7 +7,12 @@ var indexRouter = require("./routes/index");
 var app = express();
 
 const corsOptions = {
-  origin: "https://www.prothomalo.com",
+  origin: [
+    "https://www.prothomalo.com",
+    "https://www.tbsnews.net",
+    "https://www.thedailystar.net",
+    "https://www.aljazeera.com",
+  ],
   optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 

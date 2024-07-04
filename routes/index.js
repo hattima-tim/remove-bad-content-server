@@ -16,7 +16,8 @@ router.post("/ai", async function (req, res) {
   ['someone is dead','someone won something','someone did something good','someone got raped','someone did suicide']
   you will give me the following json without giving any other text or anything:
   ['someone is dead','someone got raped','someone did suicide']
-  Follow the above format in json. If there is no negative news give me an empty array (e.g., []). 
+  Follow the above format in json. If there is no negative news give me an empty array (e.g., []). The array should not have any string which have
+  leading whitespace. Each entry of the array should contain only one news.
   `;
 
   try {
